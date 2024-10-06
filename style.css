@@ -1,0 +1,114 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(50, 100, 144);
+}
+nav{
+    background-color: rgb(11, 11, 11);
+    height: 60px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    color: aliceblue;
+    gap: 14px;
+
+}
+.brand img{
+    width: 44px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.container{
+    height: 82vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container h2{
+    margin: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    left: 50%;
+}
+.playlist{
+    background-color: rgb(6, 4, 8);
+    height: 70vh;
+    width: 70vw;
+    color: rgb(50, 100, 144);
+    background-image: url("./images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.songItem{
+    margin: 10px;
+    min-width: 25vw;
+    max-width: 30vw;
+    background-color: aliceblue;
+    color: black;
+    padding: 7px;
+    border-radius: 34px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    left: 50%;
+    
+}
+.time{
+    margin-right: 10px;
+}
+.time i{
+    cursor: pointer;
+}
+.play{
+    height: 8vh;
+    background-color: black  ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-direction: column;
+
+}
+.icons{
+    margin-top: 1px;
+    
+}
+.icons i{
+    padding: 3px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.play input[type="range"]{
+    margin-top: 10px;
+    width: 90%;
+    cursor: pointer;
+}
+.pgif img{
+    position: absolute;
+    bottom:20px;
+    left: 10px;  
+    height: 35px;
+    width: 120px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in  ;
+}
